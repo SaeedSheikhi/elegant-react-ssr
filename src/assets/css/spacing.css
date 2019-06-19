@@ -1,0 +1,47 @@
+.w-80 {
+	width: 80%;
+}
+.w-85 {
+	width: 85%;
+}
+.w-90 {
+	width: 90%;
+}
+.margin-top-small {
+	margin-top: 1.5em !important;
+}
+.margin-bottom-small {
+	margin-bottom: 1.5em !important;
+}
+.divider-bottom {
+	border-bottom: 1px solid #e6e6e6;
+}
+.divider-top {
+	border-top: 1px solid #e6e6e6;
+}
+.divider-left {
+	border-left: 1px solid #e6e6e6;
+}
+.divider-right {
+	border-right: 1px solid #e6e6e6;
+}
+.virtual-line {
+	border-bottom: 1px solid #d4d4d4;
+}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+}
+.v-fluid {
+	height: 100%;
+	width: auto;
+	max-width: 100%;
+}
+.h-fluid {
+	width: 100%;
+	height: auto;
+	max-height: 100%;
+}

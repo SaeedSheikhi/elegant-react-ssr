@@ -1,0 +1,23 @@
+{
+	"short_name": "your_site_name",
+	"name": "your_site_name",
+	"dir": "ltr",
+	"lang": "en",
+	"description": "easy to use, zero config React SSR",
+	"icons": [
+		{
+			"src": "android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"start_url": "./",
+	"theme_color": "#c0392b",
+	"background_color": "#2c3e50",
+	"display": "standalone"
+}

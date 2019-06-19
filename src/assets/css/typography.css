@@ -1,0 +1,149 @@
+/* public */
+body,
+html {
+	margin: 0;
+	direction: rtl;
+	text-align: right;
+	font-family: "Nunito", "Open Sans", Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+		Cantarell, "Helvetica Neue", sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	line-height: normal;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0.2em;
+	line-height: normal;
+}
+h4,
+h5,
+.h4,
+.h5 {
+	font-size: 0.8em;
+	font-weight: 400;
+}
+
+h3,
+.h3 {
+	font-size: 0.9em;
+	font-weight: 500;
+}
+
+h2,
+.h2 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+h1,
+.h1 {
+	font-size: 1.2em;
+	font-weight: 900;
+}
+bold,
+.bold {
+	font-weight: bold;
+}
+.pointer-none {
+	pointer-events: none;
+}
+.overflow-hidden {
+	overflow: hidden;
+}
+.overflow-x-hidden {
+	overflow-x: hidden;
+}
+.overflow-y-hidden {
+	overflow-y: hidden;
+}
+.overflow-x-auto {
+	overflow-x: auto !important;
+	overflow-y: hidden;
+}
+.overflow-y-auto {
+	overflow-y: auto !important;
+	overflow-x: hidden;
+}
+.ltr {
+	direction: ltr;
+	font-family: "Nunito", "Open Sans", Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+		Cantarell, "Helvetica Neue", sans-serif;
+}
+.rtl {
+	direction: rtl;
+}
+.font-family-OpenSans {
+	font-family: "Nunito", "Open Sans", Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+		Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.font-weight-ultralight {
+	font-weight: 200;
+}
+.font-weight-light {
+	font-weight: 300;
+}
+.font-weight-regular {
+	font-weight: 400;
+}
+.font-weight-medium {
+	font-weight: 500;
+}
+.font-weight-bold {
+	font-weight: 700;
+}
+.font-weight-black {
+	font-weight: 900;
+}
+.text-fluid {
+	font-size: calc(14px + 1vw);
+}
+.text-underline {
+	border-bottom-width: 1px;
+}
+.text-underline.solid {
+	border-bottom-style: solid;
+}
+.text-underline.dotted {
+	border-bottom-style: dotted;
+}
+.text-pre-line {
+	white-space: pre-line;
+}
+.font-svg {
+	display: inline-block;
+	font-size: inherit;
+	height: 1em;
+	overflow: visible;
+	width: auto;
+	vertical-align: -0.125em;
+}
+.font-svg.down-1 {
+	vertical-align: -0.225em;
+}
+.font-svg.down-2 {
+	vertical-align: -0.325em;
+}
+.font-svg.down-3 {
+	vertical-align: -0.425em;
+}
+.font-svg.lg {
+	vertical-align: -0.225em;
+	font-size: 1.33333em;
+	line-height: 0.75em;
+}
+.font-svg.xs {
+	font-size: 0.75em;
+}

@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "8737G325JL.com.anardoni.ios.app",
+        "paths": ["/ios/app/*"]
+      }
+    ]
+  }
+}
