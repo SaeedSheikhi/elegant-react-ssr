@@ -19,11 +19,39 @@ _SSR with all the goodies, without ejecting._
 - **Preloaded page data** via async/await and React Frontload
 - **Code splitting** via React Loadable
 
-## Installation
 
-1.  Install dependencies via `yarn install`
-2.  To run locally, use `yarn start`
-3.  To run under SSR mode, use `yarn build && yarn serve`
+
+## Getting Started
+
+Clone the repo:
+```sh
+git clone https://github.com/SaeedSheikhi/elegant-react-ssr.git
+cd elegant-express
+```
+
+Install yarn:
+```js
+npm install -g yarn
+```
+
+Install dependencies:
+```sh
+yarn
+```
+
+Set environment (vars):
+```sh
+cp .env.example .env.development
+cp .env.example .env.production
+```
+
+Run application:
+```sh
+# Start on SSR mode
+yarn build && yarn serve
+
+# Start on CSR mode
+yarn start
 
 ## Why?
 
