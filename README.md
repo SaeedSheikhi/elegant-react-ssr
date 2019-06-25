@@ -52,6 +52,8 @@ yarn build && yarn serve
 
 # Start on CSR mode
 yarn start
+```
+
 
 ## Why?
 
