@@ -58,6 +58,9 @@ const rules = {
     height: "100%",
     justifyContent: "center",
     color: "#a1a1a1",
+    ":hover": {
+      textDecoration: "none"
+    },
     " h5": {
       lineHeight: "1.2",
       fontSize: "0.7em",
