@@ -14,12 +14,13 @@ const STATIC_URL =
 
 const FACEBOOK_APP_ID = "XXXXXXXXX";
 
-const defaultTitle = "دانلود" + " | " + "نصب برنامه iOS" + " | " + "اناردونی";
+const defaultTitle =
+  "React SSR" + " | " + "Zero Modification" + " | " + "Elegant";
 
 const defaultDescription =
-  "elegant react ssr boilerplate" +
+  "Elegant React SSR boilerplate" +
   "\n" +
-  "ready to use | scalable to enterprise | CRA zero config | server side react";
+  "Ready to use | Scalable to enterprise | CRA zero config | Server side react";
 
 const defaultImage = `${SITE_URL}/apple-touch-icon.png`;
 const defaultTwitter = "@example";

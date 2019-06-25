@@ -15,9 +15,20 @@ import { setNavigatorMetadata } from "./services/agent/actions";
 import { isServer } from "./services/store";
 //
 import logToService from "./helpers/logToService";
+import Navigation from "./components/Navigation";
 
 const LoadableLanding = Loadable({
   loader: () => import("./screens/Landing"),
+  loading: Loading,
+  timeout: 10000
+});
+const LoadableSSR = Loadable({
+  loader: () => import("./screens/SSR"),
+  loading: Loading,
+  timeout: 10000
+});
+const LoadableCSR = Loadable({
+  loader: () => import("./screens/CSR"),
   loading: Loading,
   timeout: 10000
 });
@@ -56,7 +67,10 @@ class App extends Component {
           />
           <Switch>
             <Route exact path="/" component={LoadableLanding} />
+            <Route exact path="/ssr" component={LoadableSSR} />
+            <Route exact path="/csr" component={LoadableCSR} />
           </Switch>
+          <Navigation />
           <ModalContainer />
         </ScrollToTop>
       </WithTracker>

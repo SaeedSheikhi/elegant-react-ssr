@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.min.css";
 import "swiper/dist/css/swiper.min.css";
 import "placeholder-loading/dist/css/placeholder-loading.min.css";
 import "moment/locale/fa";
-//
+
 import React from "react";
 import jwtDecode from "jwt-decode";
 import { render, hydrate } from "react-dom";
@@ -15,13 +15,13 @@ import { Frontload } from "react-frontload";
 import moment from "moment";
 import momentJalaali from "moment-jalaali";
 import Loadable from "react-loadable";
-//
+
 import * as serviceWorker from "./serviceWorker";
 import { setCurrentUser, renewToken } from "./services/auth/actions";
 import setAuthorizationToken from "./utils/setAuthorizationToken";
 import createStore, { isServer } from "./services/store";
 import App from "./App";
-//
+
 import "./assets/css/styles.css";
 import "./assets/css/mq.css";
 
@@ -70,5 +70,5 @@ if (root.hasChildNodes() === true) {
   // If you want your app to work offline and load faster, you can change
   // unregister() to register() below. Note this comes with some pitfalls.
   // Learn more about service workers: http://bit.ly/CRA-PWA
-  serviceWorker.register();
+  serviceWorker.unregister();
 }

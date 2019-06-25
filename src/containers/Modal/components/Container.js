@@ -7,11 +7,6 @@ import LoadingBar from "../../../components/LoadingBar";
 
 import { hideModal } from "../services/actions";
 
-const LoadableShareLink = Loadable({
-  loader: () => import("./ShareLink"),
-  loading: LoadingBar
-});
-
 const LoadableAlert = Loadable({
   loader: () => import("./Alert"),
   loading: LoadingBar
@@ -41,14 +36,6 @@ class ModalContainer extends Component {
       <div>
         {visible && <style>{"html,body {overflow-y:hidden}"}</style>}
 
-        {transitionWrapper(
-          <LoadableShareLink
-            visible={visible === "shareLink"}
-            onClose={hideModal}
-            onProcessDone={onProcessDone}
-          />,
-          visible === "shareLink"
-        )}
         {transitionWrapper(
           <LoadableAlert
             visible={visible === "alert"}

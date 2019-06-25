@@ -26,6 +26,7 @@ function Loading({ error, timedOut, pastDelay, retry }) {
     return (
       <div className="centered">
         <Spinner style={{ width: "32px", height: "32px" }} />
+        <h2 className="mt-2 mb-0">Loading Splitted Chunk</h2>
       </div>
     );
   }
