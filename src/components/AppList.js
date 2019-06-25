@@ -59,7 +59,7 @@ function AppList({
     <div className="row">
       {applications.map((application, appIndex) => {
         return (
-          <Link
+          <div
             className={classnames("col-12", {
               "col-md-6 col-lg-4": isResponsive
             })}
@@ -155,7 +155,7 @@ function AppList({
                 )}
             </div>
             {renderDivider(application, showLastUpdate)}
-          </Link>
+          </div>
         );
       })}
     </div>

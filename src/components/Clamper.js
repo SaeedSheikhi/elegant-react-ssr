@@ -30,6 +30,7 @@ const rules = {
   }),
   more: css({
     position: "absolute",
+    cursor: "pointer",
     padding: "0",
     border: "none",
     background: "none",

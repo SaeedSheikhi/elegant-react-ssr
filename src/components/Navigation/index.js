@@ -77,8 +77,8 @@ const rules = {
 };
 
 const tabs = [
-  { path: "/ssr", en: "SSR", fa: "سرور", component: LayersIcon },
-  { path: "/csr", en: "CSR", fa: "کلاینت", component: LayersIcon }
+  { path: "/ssr", en: "SSR - سرورساید", fa: "سرور", component: LayersIcon },
+  { path: "/csr", en: "CSR - کلاینت ساید", fa: "کلاینت", component: LayersIcon }
 ];
 
 class Navigation extends Component {

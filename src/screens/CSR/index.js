@@ -16,10 +16,10 @@ class SSR extends React.Component {
 
   loadAsyncData = () => {
     const {
-      ssr: { applications }
+      csr: { applications }
     } = this.props;
     let {
-      ssr: { query, options }
+      csr: { query, options }
     } = this.props;
 
     return this.props.fetchApplications(query, {
@@ -30,7 +30,7 @@ class SSR extends React.Component {
 
   loadMore = () => {
     const {
-      ssr: { applications, query, options }
+      csr: { applications, query, options }
     } = this.props;
 
     this.props.fetchMoreApplications(query, {
@@ -42,7 +42,7 @@ class SSR extends React.Component {
 
   render() {
     const {
-      ssr: { applications, total }
+      csr: { applications, total }
     } = this.props;
     if (!applications)
       return (
@@ -70,8 +70,8 @@ class SSR extends React.Component {
   }
 }
 
-function mapStateToProps({ ssr }) {
-  return { ssr };
+function mapStateToProps({ csr }) {
+  return { csr };
 }
 export default connect(
   mapStateToProps,
