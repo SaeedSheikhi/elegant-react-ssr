@@ -1,8 +1,8 @@
 import { postListApplications } from "./api";
 import hydrate from "../../../utils/hydrate";
 
-export const FETCH_APPLICATIONS = "updates/applications/FETCH";
-export const FETCH_MORE_APPLICATIONS = "updates/applications/FETCH_MORE";
+export const FETCH_APPLICATIONS = "csr/applications/FETCH";
+export const FETCH_MORE_APPLICATIONS = "csr/applications/FETCH_MORE";
 
 export const fetchApplications = (query, options) => async dispatch => {
   let value;
