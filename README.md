@@ -32,7 +32,7 @@ _SSR with all the goodies, without ejecting._
 Clone the repo:
 ```sh
 git clone https://github.com/SaeedSheikhi/elegant-react-ssr.git
-cd elegant-express
+cd elegant-react-ssr
 ```
 
 Install yarn:
@@ -53,8 +53,10 @@ cp .env.example .env.production
 
 Run application:
 ```sh
-# Start on SSR mode
-yarn build && yarn serve
+# Start on SSR mode on Unix machines
+yarn build && yarn serve:unix
+# Start on SSR mode on Windos machines
+yarn build && yarn serve:win
 
 # Start on CSR mode
 yarn start
