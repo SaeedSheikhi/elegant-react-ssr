@@ -22,21 +22,21 @@ const LoadableLanding = Loadable({
   loading: Loading,
   timeout: 10000,
   modules: ["landing"],
-  webpack: () => [require.resolveWeak("./screens/landing")]
+  webpack: () => [require.resolveWeak("./screens/Landing")]
 });
 const LoadableSSR = Loadable({
   loader: () => import(/* webpackChunkName: "ssr" */ "./screens/SSR"),
   loading: Loading,
   timeout: 10000,
   modules: ["ssr"],
-  webpack: () => [require.resolveWeak("./screens/ssr")]
+  webpack: () => [require.resolveWeak("./screens/SSR")]
 });
 const LoadableCSR = Loadable({
   loader: () => import(/* webpackChunkName: "csr" */ "./screens/CSR"),
   loading: Loading,
   timeout: 10000,
   modules: ["csr"],
-  webpack: () => [require.resolveWeak("./screens/csr")]
+  webpack: () => [require.resolveWeak("./screens/CSR")]
 });
 
 class App extends Component {
