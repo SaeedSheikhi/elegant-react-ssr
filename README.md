@@ -55,7 +55,7 @@ Run application:
 ```sh
 # Start on SSR mode on Unix machines
 yarn build && yarn serve:unix
-# Start on SSR mode on Windos machines
+# Start on SSR mode on Windows machines
 yarn build && yarn serve:win
 
 # Start on CSR mode
