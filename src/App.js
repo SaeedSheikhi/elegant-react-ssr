@@ -18,19 +18,25 @@ import logToService from "./helpers/logToService";
 import Navigation from "./components/Navigation";
 
 const LoadableLanding = Loadable({
-  loader: () => import("./screens/Landing"),
+  loader: () => import(/* webpackChunkName: "landing" */ "./screens/Landing"),
   loading: Loading,
-  timeout: 10000
+  timeout: 10000,
+  modules: ["landing"],
+  webpack: () => [require.resolveWeak("./screens/landing")]
 });
 const LoadableSSR = Loadable({
-  loader: () => import("./screens/SSR"),
+  loader: () => import(/* webpackChunkName: "ssr" */ "./screens/SSR"),
   loading: Loading,
-  timeout: 10000
+  timeout: 10000,
+  modules: ["ssr"],
+  webpack: () => [require.resolveWeak("./screens/ssr")]
 });
 const LoadableCSR = Loadable({
-  loader: () => import("./screens/CSR"),
+  loader: () => import(/* webpackChunkName: "csr" */ "./screens/CSR"),
   loading: Loading,
-  timeout: 10000
+  timeout: 10000,
+  modules: ["csr"],
+  webpack: () => [require.resolveWeak("./screens/csr")]
 });
 
 class App extends Component {
