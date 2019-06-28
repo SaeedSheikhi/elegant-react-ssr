@@ -2,6 +2,14 @@
 Server-side rendering with create-react-app, React Router v4, Helmet, Redux, and Thunk boilerplate, without ejecting CRA
 
 
+
+
+
+Client render                   | Server render
+:------------------------------:|:-----------------------------:
+![](/public/csr.gif) |![](/public/ssr.gif)
+
+
 this boilerplate is heavily inspired by [this medium article](https://medium.com/@cereallarceny/server-side-rendering-in-create-react-app-with-all-the-goodies-without-ejecting-4c889d7db25e), and using under the hood [React-Frontload](https://github.com/davnicwil/react-frontload). reach out for docs.
 
 # Server-side rendering in Create React App
