@@ -54,9 +54,9 @@ cp .env.example .env.production
 Run application:
 ```sh
 # Start on SSR mode on Unix machines
-yarn build && yarn serve:unix
+yarn build:unix && yarn serve:unix
 # Start on SSR mode on Windows machines
-yarn build && yarn serve:win
+yarn build:win && yarn serve:win
 
 # Start on CSR mode
 yarn start
