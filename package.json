@@ -75,12 +75,13 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "GENERATE_SOURCEMAP=false react-scripts build",
+		"flush:svg": "npx @svgr/cli --icon --replace-attr-values '#000000=currentColor' -d ./src/assets/svg ./src/assets/svg",
+		"build:win": "set GENERATE_SOURCEMAP=false&&react-scripts build",
+		"build:unix": "export GENERATE_SOURCEMAP=false && react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"serve:win": "set NODE_ENV=development&&set PORT=3333&&node ./server/index.js",
-		"serve:unix": "export NODE_ENV=development && export PORT=3333 && node ./server/index.js",
-		"flush:svg": "npx @svgr/cli --icon --replace-attr-values '#000000=currentColor' -d ./src/assets/svg ./src/assets/svg"
+		"serve:unix": "export NODE_ENV=development && export PORT=3333 && node ./server/index.js"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.1.2",
